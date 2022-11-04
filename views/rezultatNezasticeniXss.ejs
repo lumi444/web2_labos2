@@ -7,11 +7,11 @@
 
     <div class="container-fluid">
       <!-- Links -->
-      <a class="navbar-brand" href="">Labos 2</a>
+      <a class="navbar-brand" href="/">Labos 2</a>
       <ul class="navbar-nav">
         
         <li class="nav-item">
-          <a class="nav-link" href="#"></a>
+          <a class="nav-link" href="nesigurnixss">Nesigurno</a>
         </li>
       </ul>
     </div>
@@ -27,14 +27,25 @@
 
 <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
 
-<h1 class="cover-heading">Odaberite vrstu napada</h1>
+<h1 class="cover-heading">Nezaštićeni XSS</h1>
 <div class="container bg-light text-dark">
-    <a  href="/sigurnixss" class="btn btn-warning btn-lg btn-block">XSS</a>
-    <a href="/bac/nesigurnibac/user" class="btn btn-secondary btn-lg btn-block">Broken access control</a>
+    
+    
 
-    <p>Vježba prikazuje dvije vrste napada, XSS i BAC. Klikom na gumb odabirete koji napad se izvodi. Svaka stranica ima upute za 
-        izvođenje napada i opis, te smjernice za izvođenje.
+    <p><%- podatak %>
     </p>
+    <br/>
+    <p><%- prezime %></p>
+    
 </div>
 </div>
 </body>
+
+<script>
+    window.onload = function() {
+    document.getElementById('podatak').classList.add('active');
+    document.getElementById('prezime').classList.add('active');
+    //document.cookie="user=John"
+    
+    };
+    </script>

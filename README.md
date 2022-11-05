@@ -18,3 +18,12 @@ npm start<br/>
 
 
 <h5> Izgled aplikacije </h5>
+
+<h6>Početna stranica</h6>
+<img src="1.png"></img>
+<h6>Zaštićeni XSS, a klikom na Nesigurno demonstrira se nezaštićeni napad</h6>
+<img src="2.png"></img>
+<h6>Nezaštićeni BAC, a klikom na Sigurno demonstrira se zaštićeni napad</h6>
+<img src="3.png"></img>
+<h6>Nakon promjene URL-a u /admin (u sigurnom načinu rada) potrebno je prijaviti se kao admin</h6>
+<img src="4.png"></img>

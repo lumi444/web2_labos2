@@ -85,7 +85,7 @@ app.post('/sigurnixss',(req, res)=>{
 
 if(externalUrl){
     const hostname= '127.0.0.1';
-    app.listen(port,hostname, ()=>{
+    app.listen(port, ()=>{
       console.log(`Server locally running at http://${hostname}:${port}/ and from outside on ${externalUrl}`)
     })
   }else{
